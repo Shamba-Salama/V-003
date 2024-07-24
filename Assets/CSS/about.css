@@ -1,162 +1,152 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+.hero-el .hero{
+    padding-top: 200px;
+    background-image: url(../Images/hero-3.jpg);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 2em;
+.about-us-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f4f4f4; 
 }
 
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+.container{
+    width: 80%;
+    display:flex;
+    margin: auto;
+    padding-top: 100px;
 }
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
+.content-section{
+    flex-direction: left;
+    width: 55%;
 }
-
-header nav ul li {
-    margin: 0;
+.image-section{
+    flex-direction: right;
+    width: 50%;
 }
-
-header nav ul li a {
-    color: white;
+.image-section img{
+    width: 100%;
+    height: 70%;
+    margin-top: 130px;
+    margin-left: 40px;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 100px;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 35px;
+    text-align: center;
+}
+.content-section .content .button a{
+    background-color: black;
+    padding: 12px 40px;
     text-decoration: none;
-    font-size: 1em;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+    background-color: rgba(0, 128, 81, 0.467);
+    color: #fff;
 }
 
-.hero {
+@media screen  and (max-width:768px){
+    .container{
+        width: 80%;
+        display:flex;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        flex-direction: none;
+        width: 100%;
+        display: flex;
+        margin:auto ;
+    }
+    .image-section{
+        flex-direction: none;
+        width: 100%;
+        display: flex;
+        margin:auto ;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button{
+       text-align: center;
+    }
+}
+
+/* services we offer */
+.services-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 2em;
-    text-align: center;
-    background-color: #f9f9f9;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+.title{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align:center;
+    margin-top: 100px;
+    color: black;
+    
 }
 
-.hero-text {
-    flex: 1;
-    padding: 1em;
-}
-
-.hero-text h1 {
-    font-size: 2.5em;
-    margin: 0.5em 0;
-}
-
-.hero-text p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-.hero-buttons button {
-    margin: 0.5em;
-    padding: 0.7em 1.5em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.hero-buttons button:first-child {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.hero-buttons button:last-child {
-    background-color: #ffffff;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
-}
-
-.hero-image {
-    flex: 1;
-    padding: 1em;
-}
-
-.hero-image img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-.about {
-    padding: 2em;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.benefits {
-    padding: 2em;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.benefits h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.benefit-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-}
-
-.benefit-cards .card {
+.service-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     max-width: 300px;
-    margin: 1em;
-    padding: 1em;
     text-align: center;
+    transition: transform 0.2s;
 }
 
-.benefit-cards .card img {
-    max-width: 100%;
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
     height: auto;
-    margin-bottom: 1em;
 }
 
-.benefit-cards .card h3 {
-    margin-top: 0;
+.service-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin: 10px 0;
 }
 
-.benefit-cards .card p {
-    color: #666;
+.service-card p {
+    color: #777;
+    font-size: 16px;
+    padding: 0 10px 20px;
 }
 
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .benefit-cards {
+    .services-container {
         flex-direction: column;
         align-items: center;
     }
