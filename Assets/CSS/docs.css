@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.gallery-section {
+    margin-bottom: 40px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: calc(33% - 10px);
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery img {
+        width: calc(100% - 10px);
+    }
+}
