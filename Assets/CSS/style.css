@@ -1,5 +1,508 @@
-/* Whatsapp floating btn */
 
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+	--background-color: #ffffff; /* Background color for the entire website, including individual sections */
+	--default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+	--heading-color: #5f687b; /* Color for headings, subheadings and title throughout the website */
+	--accent-color: #10bc69; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+	--surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+	--contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  }
+
+
+
+a {
+	color: #18d26e;
+	transition: 0.5s;
+	text-decoration: none;
+  }
+  
+  a:hover,
+  a:active,
+  a:focus {
+	color: #18d36e;
+	outline: none;
+	text-decoration: none;
+  }
+  
+  p {
+	padding: 0;
+	margin: 0 0 30px 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 0;
+  }
+  
+
+
+.btn{
+	background-color: #18d26e;
+	border: none;
+}
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+	overflow: hidden;
+  }
+  
+  /* Sections Header
+  --------------------------------*/
+  .section-header h3 {
+	font-size: 32px;
+	color: #111;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	padding-bottom: 15px;
+  }
+  
+  .section-header h3::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #ddd;
+	bottom: 1px;
+	left: calc(50% - 60px);
+  }
+  
+  .section-header h3::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 3px;
+	background: #18d26e;
+	bottom: 0;
+	left: calc(50% - 20px);
+  }
+  
+  .section-header p {
+	text-align: center;
+	padding-bottom: 30px;
+	color: #333;
+  }
+  
+  /* Section with background
+  --------------------------------*/
+  .section-bg {
+	background: #f7f7f7;
+  }
+  
+
+
+/* About Us Section
+--------------------------------*/
+#about {
+	background: url("../img/about-bg.jpg") center top no-repeat fixed;
+	background-size: cover;
+	padding: 60px 0 40px 0;
+	position: relative;
+  }
+  
+  #about::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.92);
+	z-index: 9;
+  }
+  
+  #about .container {
+	position: relative;
+	z-index: 10;
+  }
+  
+  #about .about-col {
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+	margin-bottom: 20px;
+  }
+  
+  #about .about-col .img {
+	position: relative;
+  }
+  
+  #about .about-col .img img {
+	border-radius: 4px 4px 0 0;
+  }
+  
+  #about .about-col .icon {
+	width: 64px;
+	height: 64px;
+	text-align: center;
+	position: absolute;
+	background-color: #18d26e;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	left: calc(50% - 32px);
+	bottom: -30px;
+	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  #about .about-col i {
+	font-size: 28px;
+	line-height: 0;
+	color: #fff;
+	transition: 0.3s;
+  }
+  
+  #about .about-col:hover .icon {
+	background-color: #fff;
+  }
+  
+  #about .about-col:hover i {
+	color: #18d26e;
+  }
+  
+  #about .about-col h2 {
+	color: #000;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 0;
+	margin: 40px 0 12px 0;
+  }
+  
+  #about .about-col h2 a {
+	color: #000;
+  }
+  
+  #about .about-col h2 a:hover {
+	color: #18d26e;
+  }
+  
+  #about .about-col p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333;
+	margin-bottom: 0;
+	padding: 0 20px 20px 20px;
+  }
+  
+  
+/* Services Section
+--------------------------------*/
+#services {
+	background: #fff;
+	background-size: cover;
+	padding: 60px 0 40px 0;
+  }
+  
+  #services .box {
+	margin-bottom: 30px;
+  }
+  
+  #services .icon {
+	float: left;
+  }
+  
+  #services .icon i {
+	color: #18d26e;
+	font-size: 36px;
+	line-height: 0;
+	transition: 0.5s;
+  }
+  
+  #services .title {
+	margin-left: 60px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 18px;
+  }
+  
+  #services .title a {
+	color: #111;
+  }
+  
+  #services .box:hover .title a {
+	color: #18d26e;
+  }
+  
+  #services .description {
+	font-size: 14px;
+	margin-left: 60px;
+	line-height: 24px;
+	margin-bottom: 0;
+  }
+
+
+/* Get staed section */
+
+.start-num{
+	margin: 2rem 0 2rem;
+	background-color: #18d26e;
+	padding: 0.5rem 0 0.5rem;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+	border-radius: 1rem 0 1rem;
+}
+
+
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-wrap {
+	background-color: var(--surface-color);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+  }
+  
+  @media (max-width: 575px) {
+	.contact .info-wrap {
+	  padding: 20px;
+	}
+  }
+  
+  .contact .info-item {
+	margin-bottom: 40px;
+  }
+  
+  .contact .info-item i {
+	font-size: 20px;
+	color: var(--accent-color);
+	background: color-mix(in srgb, var(--accent-color), transparent 92%);
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	margin-right: 15px;
+  }
+  
+  .contact .info-item h3 {
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+  }
+  
+  .contact .info-item p {
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+  }
+  
+  .contact .info-item:hover i {
+	background: var(--accent-color);
+	color: var(--contrast-color);
+  }
+  
+  .contact .php-email-form {
+	background-color: var(--surface-color);
+	height: 100%;
+	padding: 30px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 575px) {
+	.contact .php-email-form {
+	  padding: 20px;
+	}
+  }
+  
+  .contact .php-email-form input[type=text],
+  .contact .php-email-form input[type=email],
+  .contact .php-email-form textarea {
+	font-size: 14px;
+	padding: 10px 15px;
+	box-shadow: none;
+	border-radius: 0;
+	color: var(--default-color);
+	background-color: var(--surface-color);
+	border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  }
+  
+  .contact .php-email-form input[type=text]:focus,
+  .contact .php-email-form input[type=email]:focus,
+  .contact .php-email-form textarea:focus {
+	border-color: var(--accent-color);
+  }
+  
+  .contact .php-email-form input[type=text]::placeholder,
+  .contact .php-email-form input[type=email]::placeholder,
+  .contact .php-email-form textarea::placeholder {
+	color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
+  
+  .contact .php-email-form button[type=submit] {
+	color: var(--contrast-color);
+	background: var(--accent-color);
+	border: 0;
+	padding: 10px 30px;
+	transition: 0.4s;
+	border-radius: 50px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+	background: color-mix(in srgb, var(--accent-color), transparent 25%);
+  }
+  
+
+
+
+    /* My skills section */
+
+    .my-skills {
+		width: 90vw;
+		overflow-x: scroll;
+		white-space: nowrap;
+		background-color: transparent;
+		display: flex;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	  }
+	  
+	  .scroll-disabler {
+		width: 100vw;
+		height: 450px;
+		position: absolute;
+		background-color: rgba(0,0,0 , 0.0001);
+	  }
+	  
+	   ::-webkit-scrollbar {
+		display: none;
+	  }
+	  
+	  article {
+		min-width: 350px;
+		height: 400px;
+		padding: 1rem;
+	  }
+	  article .wrapper {
+		padding: 1rem;
+		background-color: #fff;
+		height: 100%;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		border-radius: 25px;
+	  }
+	  article .img {
+		height: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 25px 25px 0 0;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+	  }
+	
+	
+	  article .img-1{
+		background-image: url(../Images/drone.jpg);
+	  }
+	  article .img-2{
+		background-image: url(../Images/img-1.jpg);
+	  }
+	  article .img-3{
+		background-image: url(../Images/img-3.jpg);
+	  }
+	  article .img-4{
+		background-image: url(../Images/img-6.jpg);
+	  }
+	
+	  article .img-5{
+		background-image: url(../Images/paddy-1.jpg);
+	  }
+	
+	  article .img-6{
+		background-image: url(../Images/img-1.jpg);
+	  }
+	
+	
+	  article .content > div {
+		height: 2rem;
+		/* background-color: #0034c4; */
+		margin: 2rem auto 0 auto;
+		width: 85%;
+		/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); */
+		border-radius: 5px;
+	  }
+	  article .content > div:last-child {
+		height: 5rem;
+		background: none;
+	  }
+	
+	
+	
+	  /* University Details */
+  
+  
+	  .container .work{
+		font-size: 2rem;
+		font-weight: 700;
+		text-align: center;
+		color: #ffffff;
+		margin: 4rem 0 3rem;
+		text-decoration:overline;
+	  }
+	
+  
+	  .content .uni-title{
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	  }
+	
+	 .content .uni-title h1{
+			  text-align: start;
+			  color: #1d1d1d;
+			  font-size: 1.2rem;
+			  font-family: "Raleway",  sans-serif;
+			  text-wrap: wrap;
+		  }
+	
+	
+	 .content .uni-details a{
+		   color: rgb(0, 128, 6);
+		  }
+		  
+	
+		  .uni-btn{
+			border: none;
+			background: none;
+			border: 1px solid #2929f3;
+			border-radius: 0.5rem;
+		  }
+	
+		  .uni-btn:hover{
+			background-color: #2929f3;
+			color: #fff;
+		  }
+  
+		  .work-details p, .work-details a{
+			color: var(--color-white);
+			margin: 2rem 0 0.5rem;
+		  }
+	
+  
+  
+/* Whatsapp floating btn */
 .float{
 	position:fixed;
 	width:60px;
@@ -18,3 +521,8 @@
 .my-float{
 	margin-top:16px;
 }
+
+
+
+
+
