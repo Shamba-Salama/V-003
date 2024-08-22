@@ -43,6 +43,15 @@ a {
   }
   
 
+  .logo-sec{
+	background-image: url(../Images/logo-1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 4rem;
+	height: 4rem;
+  }
+
 
 .btn{
 	background-color: #18d26e;
