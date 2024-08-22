@@ -13,22 +13,22 @@ body {
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  /* margin-bottom: 4rem; */
-  /* background-image: url(../Images/img-4.jpg);
+  margin-bottom: 4rem; 
+   background-image: url(../Images/back-1.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
-  position: relative;
+  background-repeat: no-repeat;
+  /* position: relative; */
 }
 
-.carousel video{
-position: absolute;
-z-index: -1;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-width: 100%;
-}
+/* .carousel video{
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+} */
 
 
 /* Since positioning the image, we need to help out the caption */
