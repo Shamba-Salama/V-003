@@ -23,8 +23,13 @@
       href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
     />
 
+
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="Assets/CSS/about.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Assets/CSS/about.css">
+
+    <!-- Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -108,6 +113,7 @@
 
     <!-- Custom styles for this template -->
     <link href="Assets/CSS/carousel.css" rel="stylesheet" />
+    <link href="Assets/CSS/style.css" rel="stylesheet" />
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -134,81 +140,16 @@
       </symbol>
     </svg>
 
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
-      <button
-        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-      >
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end shadow"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
     <header data-bs-theme="Light">
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light p-3">
         <div class="container-fluid">
+
+          <div class="logo-sec">
+            <!-- Logo is here -->
+          </div>
+  
           <a class="navbar-brand" href="#">SalamaFarm</a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -223,10 +164,10 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="about.html">About</a>
+                <a class="nav-link text-dark" href="about1.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark" href="contact.html">contact</a>
@@ -252,94 +193,91 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-success" type="submit">Search</button>
+              <button class="btn" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+    <main>
+     <div class="container hero">
+
+    </div>
+    <!-- About us section -->
 
     <div class="about-us-section">
         <div class="container">
-          <div class="content-section">
-            <div class="title">
-              <h2>About Us</h2>
-            </div>
-            <div class="content">
-              <p>
-                Smart Pest Deterrent System tackles the menace of quelea birds and
-                locusts, offering a comprehensive solution integrating
-                cutting-edge technologies. Our real-time monitoring using drones
-                and AI-powered pest identification ensure accurate and efficient
-                pest management, prioritizing environmental sustainability with
-                acoustic deterrents. Designed for scalability, our system empowers
-              </p>
-              <div class="button">
-                <a href="">Read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="image-section">
-            <img src="Assets/Images/image-1.JPG" />
-          </div>
+            <header class="section-header">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </header>
         </div>
-        <div class="title">
-          <h2>Why Choose Us</h2>
+    </div>
+
+
+    <!-- Why Choose us Section -->
+      <div class="services-container">
+        <header class="section-header">
+            <h3>Why Choose Us?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </header>
+        
+        <div class="service-card">
+          <img src="Assets/Images/drone.jpg" alt="Service 1" />
+          <div class="icon"><i class="bi bi-bar-chart"></i></div>
+          <h2>Real-Time Monitoring</h2>
+          <p>
+            The system uses drones to provide immediate detection and tracking
+            of quelea birds.
+          </p>
         </div>
-        <div class="services-container">
-          <div class="service-card">
-            <img src="Assets/Images/drone.jpg" alt="Service 1" />
-            <h2>Real-Time Monitoring</h2>
-            <p>
-              The system uses drones to provide immediate detection and tracking
-              of quelea birds.
-            </p>
-          </div>
-          <div class="service-card">
-            <img src="Assets/Images/img-4.jpg" alt="Service 2" />
-            <h2>Environmental Sustainability</h2>
-            <p>
-              It utilizes non-lethal methods, ensuring no harm to the birds or
-              ecosystem.
-            </p>
-          </div>
-          <div class="service-card">
-            <img src="Assets/Images/img-3.jpg" alt="Service 3" />
-            <h2>Economic Efficiency</h2>
-            <p>
-              This approach reduces crop damage, minimizing costs related to bird
-              control and crop loss.
-            </p>
-          </div>
-          <!-- Add more service cards as needed -->
+        <div class="service-card">
+          <img src="Assets/Images/img-4.jpg" alt="Service 2" />
+          <div class="icon"><i class="bi bi-bar-chart"></i></div>
+          <h2>Environmental Sustainability</h2>
+          <p>
+            It utilizes non-lethal methods, ensuring no harm to the birds or
+            ecosystem.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="Assets/Images/img-3.jpg" alt="Service 3" />
+          <div class="icon"><i class="bi bi-bar-chart"></i></div>
+          <h2>Economic Efficiency</h2>
+          <p>
+            This approach reduces crop damage, minimizing costs related to bird
+            control and crop loss.
+          </p>
         </div>
       </div>
 
-      <!-- FOOTER -->
-      <div class="container">
-        <footer class="py-5">
+
+
+  <!-- FOOTER -->
+  <div class="container-fluid footer">
+        <footer class="py-5 container">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Quick Links</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                  <a href="#" class="nav-link p-0 text-light">Home</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Features</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Pricing</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  <a href="#" class="nav-link p-0 text-light">FAQs</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                  <a href="#" class="nav-link p-0 text-light">About</a>
                 </li>
               </ul>
             </div>
@@ -348,23 +286,23 @@
               <h5>Contact us</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Phone</a>
+                  <a href="#" class="nav-link p-0 text-light">Phone</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Email</a>
+                  <a href="#" class="nav-link p-0 text-light">Email</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Whatsapp</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Messager</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Facebook</a
                   >
                 </li>
@@ -375,25 +313,25 @@
               <h5>Socials</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Facebook</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">X</a>
+                  <a href="#" class="nav-link p-0 text-light">X</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Tiktok</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Instagram</a
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
+                  <a href="#" class="nav-link p-0 text-light"
                     >Telegram</a
                   >
                 </li>
@@ -447,6 +385,20 @@
         </footer>
       </div>
     </main>
+    <!-- Javascript -->
     <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/JS/script.js"></script>
+    <!-- Whatsapp button -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=254701722066&text=Hello%21%20tell%20me%20more%20about%20SalamaFarm%20%0AI%20am%20interested%20in%20acquiring%20the%20SalamaFarm%20system%20for%20my%20farm.%20Could%20you%20please%20provide%20more%20information%20about%20the%20system%2C%20including%20its%20features%2C%20pricing%2C%20and%20how%20I%20can%20get%20started%3F%0AThank%20you%2C."
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
   </body>
 </html>
